@@ -178,14 +178,14 @@ export default class App extends React.Component {
                 onClick={changeHandler}
                 className="setting"
                 disabled={this.state.timerRunning}
-                title="decrement session"
+                title="Decrement session time"
               > - </button>
               <span id="session-length">{this.state.sessionLength}</span>
               <button id="session-increment"
                 onClick={changeHandler}
                 className="setting"
                 disabled={this.state.timerRunning}
-                title="increment session"
+                title="Increment session time"
               > + </button>
             </fieldset>
             <fieldset>
@@ -194,14 +194,14 @@ export default class App extends React.Component {
                 onClick={changeHandler}
                 className="setting"
                 disabled={this.state.timerRunning}
-                title="decrement break"
+                title="Decrement break time"
               > - </button>
               <span id="break-length">{this.state.breakLength}</span>
               <button id="break-increment"
                 onClick={changeHandler}
                 className="setting"
                 disabled={this.state.timerRunning}
-                title="increment break"
+                title="Increment break time"
               > + </button>
             </fieldset>
           </div>
@@ -209,21 +209,21 @@ export default class App extends React.Component {
             <button id="start_stop"
               onClick={this.timerActionHandler}
               className="action"
-              title={this.state.timerRunning ? "pause timer" : "start timer"}
+              title={this.state.timerRunning ? "Pause timer" : "Start timer"}
             >
               <Icon name={this.state.timerRunning ? "pause" : "play"} />
             </button>
             <button id="reset"
               onClick={this.resetHandler}
               className="action"
-              title="reset timer"
+              title="Reset timer"
             >
               <Icon name="reset" />
             </button>
             <button id="source"
               onClick={this.gotoGithub}
               className="action"
-              title="view source"
+              title="View source repository"
             >
               <Icon name="github" />
             </button>
@@ -231,7 +231,6 @@ export default class App extends React.Component {
         </div>
         {/* <audio id="beep" src="./src/assets/Alarm.mp3" preload="auto" ref={this.beep} />  use this in development */}
         <audio id="beep" src="https://github.com/jmcarvajalj/pomodoro-clock/raw/main/src/assets/Alarm.mp3" preload="auto" ref={this.beep} />
-
       </main>
     )
   }
