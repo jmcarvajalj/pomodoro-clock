@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C1D0B5;
+
+}
+
+.container button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    color: white;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container button:focus {
+    outline: none;
+}
+
+.container button.setting {
+    width: 22px;
+    height: 22px;
+    font-size: 2.8rem;
+}
+
+.container button.setting:disabled {
+    color: darkgray;
+}
+
+.container button.setting:disabled:hover {
+    background: none;
+}
+
+.container button.action {
+    width: 22px;
+    height: 22px;
+    font-size: 2.8rem;
+}
+
+.container .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #88977e;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    width: 50%
+}
+
+.container .circle .display {
+    background: #3d3a3a5b;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 24px;
+}
+
+.container .circle .display .timer-type {
+    color: white;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+}
+
+.container .circle .display .timer {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-family: Lato, sans-serif;
+    line-height: 0px;
+}
+
+.container .circle .settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.container .circle .settings fieldset {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    font-family: Lato, sans-serif;
+    font-size: 1em;
+    width: 90px;
+    text-align: center;
+    border-color: white;
+}
+
+.container .circle .settings fieldset span {
+    font-size: 1.6rem;
+}
+
+.container .circle .actions {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
