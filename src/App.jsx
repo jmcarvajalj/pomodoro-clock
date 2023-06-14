@@ -229,7 +229,9 @@ export default class App extends React.Component {
             </button>
           </div>
         </div>
-        <audio id="beep" src="./src/assets/Alarm.mp3" preload="auto" ref={this.beep} />
+        {/* <audio id="beep" src="./src/assets/Alarm.mp3" preload="auto" ref={this.beep} />  use this in development */}
+        <audio id="beep" src="https://github.com/jmcarvajalj/pomodoro-clock/raw/main/src/assets/Alarm.mp3" preload="auto" ref={this.beep} />
+
       </main>
     )
   }
